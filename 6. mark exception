@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks = 120;
+
+    try {
+        if (marks > 100)
+            throw "Invalid marks";
+        cout << "Valid marks";
+    }
+    catch (const char* msg) {
+        cout << msg;
+    }
+}
