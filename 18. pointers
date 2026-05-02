@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int marks;
+
+    void display() {
+        cout << "Name: " << name << endl;
+        cout << "Marks: " << marks << endl;
+    }
+};
+
+int main() {
+    Student s1;
+    Student *ptr;
+
+    ptr = &s1;   
+
+    ptr->name = "Anitha";
+    ptr->marks = 85;
+
+    ptr->display();   
+
+    return 0;
+}
+
